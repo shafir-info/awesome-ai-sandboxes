@@ -107,6 +107,21 @@ Persistent and secure sandboxes for AI agents, powered by Firecracker microVMs.
 
 ---
 
+### SmolVM (by [Celesto AI](https://celesto.ai))
+[Website](https://celesto.ai) | [Docs](https://docs.celesto.ai/smolvm) | [GitHub](https://github.com/CelestoAI/SmolVM)
+
+Open source AI sandbox with flexible microVM backends - ships with QEMU and Firecracker.
+
+- **Isolation:** Full VMs with their own filesystem, network, and process space
+- **Key features:** Run Ubuntu, Windows, or any OS, mount local file systems, snapshots to restore the state, and network control for egress.
+- **Stateful:** Yes, stop and resume at any point in time.
+- **GPU:** Yes (powered by QEMU)
+- **BYOC / Self-host:** Yes, built to self-host.
+- **SDKs:** Python SDK and CLI (`pip install smolvm`)
+- **Pricing:** Free (open source)
+
+---
+
 ## Closed Source
 
 ### [Blaxel](https://blaxel.ai)
