@@ -6,7 +6,7 @@ All information sourced exclusively from official docs and landing pages. PRs we
 
 > **Why this list?** There's a lot of noise and inaccurate info about sandbox providers online. This repo exists to fix that. Every claim here links back to the provider's own docs or landing page.
 
-![Awesome AI Sandboxes Market Map](assets/map-white.png)
+![Awesome AI Sandboxes Market Map](assets/market-map.png)
 
 ---
 
@@ -25,18 +25,17 @@ Secure cloud sandboxes for AI agents with real-world tools. Powered by Firecrack
 - **SDKs:** Python, JavaScript/TypeScript
 - **License:** Apache 2.0
 - **Pricing:** Free tier available, pay-as-you-go
+- **Providing sandboxes for:** Hugging Face, Manus, Groq, Lindy, Genspark, Athena, Gumloop
 
 ---
 
 ### [Beam](https://beam.cloud)
-
 [Website](https://beam.cloud) | [Docs](https://docs.beam.cloud) | [GitHub](https://github.com/beam-cloud/beta9)
 
-Open-source GPU sandboxes with checkpoint restore, durable task queues, and serverless inference endpoints. 
+Open-source GPU sandboxes with checkpoint restore, durable task queues, and serverless inference endpoints.
 
 - **Isolation:** gVisor or runc (configurable)
-- **Key features:** 
-GPU checkpoint restore, Docker-in-Docker support, storage volumes, and per-second billing. 
+- **Key features:** GPU checkpoint restore, Docker-in-Docker support, storage volumes, and per-second billing
 - **Stateful:** Full memory and disk snapshots, plus distributed volumes for file storage
 - **GPU:** Yes
 - **BYOC / Self-host:** Yes (BYOC, on-prem, self-hosted)
@@ -59,6 +58,7 @@ Secure and elastic infrastructure for running AI-generated code. Sub-90ms sandbo
 - **SDKs:** Python, TypeScript
 - **License:** Apache 2.0
 - **Pricing:** Pay-as-you-go per second, $200 free compute included
+- **Providing sandboxes for:** LangChain, Turing, AfterQuery, Mintlify, SambaNova, Elementor, Writer, Mastra, Prosus, Tessl, Snorkel AI, CoreWeave, Parabola
 
 ---
 
@@ -91,6 +91,21 @@ Production-grade sandbox runtime for AI agents.
 
 ---
 
+### [SmolVM](https://celesto.ai) (by Celesto AI)
+[Website](https://celesto.ai) | [Docs](https://docs.celesto.ai/smolvm) | [GitHub](https://github.com/CelestoAI/SmolVM)
+
+Open source AI sandbox with flexible microVM backends - ships with QEMU and Firecracker.
+
+- **Isolation:** Full VMs with their own filesystem, network, and process space
+- **Key features:** Run Ubuntu, Windows, or any OS, mount local file systems, snapshots to restore the state, and network control for egress
+- **Stateful:** Yes, stop and resume at any point in time
+- **GPU:** Yes (powered by QEMU)
+- **BYOC / Self-host:** Yes, built to self-host
+- **SDKs:** Python SDK and CLI (`pip install smolvm`)
+- **Pricing:** Free (open source)
+
+---
+
 ### [Superserve](https://www.superserve.ai)
 [Website](https://www.superserve.ai) | [Docs](https://docs.superserve.ai) | [GitHub](https://github.com/superserve-ai/superserve)
 
@@ -104,21 +119,6 @@ Persistent and secure sandboxes for AI agents, powered by Firecracker microVMs.
 - **SDKs:** TypeScript (`@superserve/sdk`), Python (`superserve`)
 - **License:** Apache 2.0
 - **Pricing:** Free tier, usage-based (vCPU/hour, GiB/hour)
-
----
-
-### SmolVM (by [Celesto AI](https://celesto.ai))
-[Website](https://celesto.ai) | [Docs](https://docs.celesto.ai/smolvm) | [GitHub](https://github.com/CelestoAI/SmolVM)
-
-Open source AI sandbox with flexible microVM backends - ships with QEMU and Firecracker.
-
-- **Isolation:** Full VMs with their own filesystem, network, and process space
-- **Key features:** Run Ubuntu, Windows, or any OS, mount local file systems, snapshots to restore the state, and network control for egress.
-- **Stateful:** Yes, stop and resume at any point in time.
-- **GPU:** Yes (powered by QEMU)
-- **BYOC / Self-host:** Yes, built to self-host.
-- **SDKs:** Python SDK and CLI (`pip install smolvm`)
-- **Pricing:** Free (open source)
 
 ---
 
@@ -136,6 +136,7 @@ The perpetual sandbox platform. Sandboxes auto-suspend when idle and resume from
 - **BYOC / Self-host:** No
 - **SDKs:** TypeScript, Python
 - **Pricing:** Pay for active compute only, $0 on standby. SOC 2, HIPAA, ISO 27001
+- **Providing sandboxes for:** Shortwave, Strapi, Webflow
 
 ---
 
@@ -150,7 +151,7 @@ Simple and affordable full VM sandbox for agents.
 - **GPU:** No
 - **BYOC / Self-host:** No (managed service, EU regions)
 - **SDKs:** CLI (`box`) with `--json` JSONL output for scripting
-- **Pricing:** $20/month minimum; $20 buys 2,000,000 VM-seconds (~555h) of a dedicated 4 vCPU / 8 GB VM, billed by the second. ~100 active VMs/account soft cap (raising)
+- **Pricing:** $20/month minimum; $20 buys 2,000,000 VM-seconds (~555h) of a dedicated 4 vCPU / 8 GB VM, billed by the second
 
 ---
 
@@ -169,21 +170,6 @@ Persistent, isolated environments powered by Cloudflare Containers. Full compute
 
 ---
 
-### [Freestyle](https://freestyle.sh)
-[Website](https://freestyle.sh) | [Docs](https://freestyle.sh/docs) | [GitHub](https://github.com/freestyle-sh/freestyle-sh)
-
-Full Linux VMs for AI agents with built-in Git, live forking, and pause/resume. Sub-600ms provisioning.
-
-- **Isolation:** Full Linux VMs with KVM, nested virtualization support
-- **Key features:** <600ms VM provisioning, live forking (clone running VM in milliseconds), pause & resume, built-in multi-tenant Git with branching/diffs/webhooks, custom domains, VPCs, SSH access, high IO, largest VMs/most memory + disk available in public tiers.
-- **Stateful:** Yes, persistent VMs with suspend/resume, snapshots
-- **GPU:** Not specified
-- **BYOC / Self-host:** Not specified
-- **SDKs:** TypeScript (`freestyle`)
-- **Pricing:** Free tier (10 concurrent VMs), Hobby $50/month, Pro $500/month
-
----
-
 ### [CodeSandbox](https://codesandbox.io)
 [Website](https://codesandbox.io) | [Docs](https://codesandbox.io/docs) | [GitHub](https://github.com/codesandbox)
 
@@ -196,21 +182,23 @@ Cloud sandbox platform (now part of Together AI) for isolated microVM environmen
 - **BYOC / Self-host:** No
 - **SDKs:** TypeScript/JavaScript (`@codesandbox/sdk`)
 - **Pricing:** Free tier (40h VM credits/month), Scale from $170/month
+- **Providing sandboxes for:** Algolia, Microsoft, Intel, NVIDIA, Atlassian, Uber, Stripe, Zendesk, Adobe, Shopify
 
 ---
 
-### [Leap0](https://leap0.dev)
-[Website](https://leap0.dev) | [Docs](https://leap0.dev/docs) | [GitHub](https://github.com/leap0-dev)
+### [Freestyle](https://freestyle.sh)
+[Website](https://freestyle.sh) | [Docs](https://freestyle.sh/docs) | [GitHub](https://github.com/freestyle-sh/freestyle-sh)
 
-Cloud sandboxes for AI agents. Spin up Firecracker microVMs in ~100ms.
+Full Linux VMs for AI agents with built-in Git, live forking, and pause/resume. Sub-600ms provisioning.
 
-- **Isolation:** Firecracker microVMs with Jailer
-- **Key features:** ~100ms cold start, any container image as template, checkpoint/restore snapshots, pause/resume, desktop (computer use), Git integration, LSP support, network firewall with credential brokering, object storage mounts
-- **Stateful:** Yes, pause/resume, checkpoint snapshots with restore
-- **GPU:** No
-- **BYOC / Self-host:** Yes (BYOC and on-premises)
-- **SDKs:** Python, TypeScript
-- **Pricing:** Free during public preview, $0.0504/vCPU-hour, $0.0162/GB-hour
+- **Isolation:** Full Linux VMs with KVM, nested virtualization support
+- **Key features:** <600ms VM provisioning, live forking (clone running VM in milliseconds), pause & resume, built-in multi-tenant Git with branching/diffs/webhooks, custom domains, VPCs, SSH access, high IO, largest VMs/most memory + disk available in public tiers
+- **Stateful:** Yes, persistent VMs with suspend/resume, snapshots
+- **GPU:** Not specified
+- **BYOC / Self-host:** Not specified
+- **SDKs:** TypeScript (`freestyle`)
+- **Pricing:** Free tier (10 concurrent VMs), Hobby $50/month, Pro $500/month
+- **Providing sandboxes for:** Onlook, Wordware, HeroUI, Rork, Vibeflow
 
 ---
 
@@ -229,6 +217,21 @@ Long-running AI sandboxes for coding agents. Persistent microVM environments wit
 
 ---
 
+### [Leap0](https://leap0.dev)
+[Website](https://leap0.dev) | [Docs](https://leap0.dev/docs) | [GitHub](https://github.com/leap0-dev)
+
+Cloud sandboxes for AI agents. Spin up Firecracker microVMs in ~100ms.
+
+- **Isolation:** Firecracker microVMs with Jailer
+- **Key features:** ~100ms cold start, any container image as template, checkpoint/restore snapshots, pause/resume, desktop (computer use), Git integration, LSP support, network firewall with credential brokering, object storage mounts
+- **Stateful:** Yes, pause/resume, checkpoint snapshots with restore
+- **GPU:** No
+- **BYOC / Self-host:** Yes (BYOC and on-premises)
+- **SDKs:** Python, TypeScript
+- **Pricing:** Free during public preview, $0.0504/vCPU-hour, $0.0162/GB-hour
+
+---
+
 ### [Modal](https://modal.com)
 [Website](https://modal.com) | [Docs](https://modal.com/docs) | [GitHub](https://github.com/modal-labs)
 
@@ -241,6 +244,7 @@ Serverless cloud platform for AI with sandboxes, GPU compute, and sub-second col
 - **BYOC / Self-host:** No
 - **SDKs:** Python (primary), TypeScript/Go via libmodal
 - **Pricing:** Pay-as-you-go, $30/month free credits on Starter plan
+- **Providing sandboxes for:** Runway, Suno, Lovable, Quora, Substack, Ramp, DoorDash, Cognition
 
 ---
 
@@ -274,6 +278,22 @@ Fast, secure cloud sandboxes for AI agents to run code, browse the web, use desk
 
 ---
 
+### [Qbox](https://qbox.sh)
+[Website](https://qbox.sh) | [Docs](https://qbox.sh/docs)
+
+Self-hostable Firecracker microVM sandbox orchestrator for AI agents and untrusted code. Runs on your own Linux hosts.
+
+- **Isolation:** Firecracker microVMs (full VM with own kernel, hardware-level isolation)
+- **Key features:** Self-hosted by design, persistent volumes, port forwarding with HTTPS previews, browser sessions over CDP, templates from any OCI image, operator dashboard, single-host installer
+- **Stateful:** Sandboxes are ephemeral, mount object storage volumes for persistence
+- **GPU:** No
+- **BYOC / Self-host:** Yes, self-hosted by default (bare metal, on-prem hypervisors, your own cloud VMs)
+- **SDKs:** Python (`qbox-sh`), REST + WebSocket API, CLI
+- **License:** Closed source
+- **Pricing:** Free to self-host
+
+---
+
 ### [Runloop](https://runloop.ai)
 [Website](https://runloop.ai) | [Docs](https://docs.runloop.ai) | [GitHub](https://github.com/runloopai)
 
@@ -286,36 +306,6 @@ Devbox infrastructure for building, benchmarking, and shipping AI coding agents 
 - **BYOC / Self-host:** Yes (deploy-to-VPC option)
 - **SDKs:** Python, TypeScript
 - **Pricing:** Free tier with $50 credits, usage-based compute
-
----
-
-### [Vercel Sandbox](https://vercel.com/sandbox)
-[Website](https://vercel.com/sandbox) | [Docs](https://vercel.com/docs/sandbox) | [GitHub](https://github.com/vercel/sandbox)
-
-Secure Firecracker microVMs for running untrusted or AI-generated code on Vercel. Millisecond startup with Active CPU pricing.
-
-- **Isolation:** Firecracker microVMs (each sandbox gets its own filesystem and network)
-- **Key features:** Millisecond cold starts, persistent sandboxes (auto-save state on stop), snapshots, network firewall with credentials brokering, up to 8 vCPUs / 2GB RAM per vCPU, live preview URLs (up to 4 ports), Node.js and Python runtimes
-- **Stateful:** Yes, persistent sandboxes with auto-save and snapshot/restore
-- **GPU:** No
-- **BYOC / Self-host:** No (runs on Vercel)
-- **SDKs:** JavaScript/TypeScript (`@vercel/sandbox`), Python (`vercel.sandbox`), CLI
-- **Pricing:** Active CPU pricing (pay only when code runs), up to 5h max session on Pro/Enterprise
-
----
-
-### [Tensorlake](https://tensorlake.ai)
-[Website](https://tensorlake.ai) | [Docs](https://docs.tensorlake.ai) | [GitHub](https://github.com/tensorlakeai/tensorlake)
-
-Lightspeed AI-native sandboxes. Stateful compute for durable agentic loops and isolated tool/code execution, powered by Firecracker and CloudHypervisor.
-
-- **Isolation:** Firecracker / CloudHypervisor microVMs
-- **Key features:** <300ms startup, dynamic CPU/memory/disk sizing per API call, snapshot/clone/replicate running sandboxes, live migration, durable orchestration with fan-out/retries/queues, RL environment support (10k+ concurrent)
-- **Stateful:** Yes, named sandboxes with suspend/resume in exact state
-- **GPU:** Not specified
-- **BYOC / Self-host:** Yes (deploy in your own AWS/GCP/Azure account)
-- **SDKs:** Python, TypeScript
-- **Pricing:** Free tier, usage-based (vCPU/hour, GiB-hour). SOC 2 Type II, HIPAA
 
 ---
 
@@ -333,24 +323,49 @@ Persistent, hardware-isolated execution environments. A Sprite is a full Linux c
 - **Pricing:** Pay for actual usage: $0.07/CPU-hour, $0.04375/GB-hour memory, $30 trial credits
 
 ---
-### [qbox](https://qbox.sh)
-[Website](https://qbox.sh) | [Docs](https://qbox.sh/docs)
 
-Self-hostable Firecracker microVM sandbox orchestrator for AI agents and untrusted code. Runs on your own Linux hosts.
+### [Tensorlake](https://tensorlake.ai)
+[Website](https://tensorlake.ai) | [Docs](https://docs.tensorlake.ai) | [GitHub](https://github.com/tensorlakeai/tensorlake)
 
-- **Isolation:** Firecracker microVMs (full VM with own kernel, hardware-level isolation)
-- **Key features:** Self-hosted by design, persistent volumes, port forwarding with HTTPS previews, browser sessions over CDP, templates from any OCI image, operator dashboard, single-host installer (`curl -fsSL https://qbox.sh/install.sh | sh`)
-- **Stateful:** Sandboxes are ephemeral, mount object storage volumes for persistence
+Lightspeed AI-native sandboxes. Stateful compute for durable agentic loops and isolated tool/code execution, powered by Firecracker and CloudHypervisor.
+
+- **Isolation:** Firecracker / CloudHypervisor microVMs
+- **Key features:** <300ms startup, dynamic CPU/memory/disk sizing per API call, snapshot/clone/replicate running sandboxes, live migration, durable orchestration with fan-out/retries/queues, RL environment support (10k+ concurrent)
+- **Stateful:** Yes, named sandboxes with suspend/resume in exact state
+- **GPU:** Not specified
+- **BYOC / Self-host:** Yes (deploy in your own AWS/GCP/Azure account)
+- **SDKs:** Python, TypeScript
+- **Pricing:** Free tier, usage-based (vCPU/hour, GiB-hour). SOC 2 Type II, HIPAA
+- **Providing sandboxes for:** SIXT, Reliant AI, Novis AI
+
+---
+
+### [Vercel Sandbox](https://vercel.com/sandbox)
+[Website](https://vercel.com/sandbox) | [Docs](https://vercel.com/docs/sandbox) | [GitHub](https://github.com/vercel/sandbox)
+
+Secure Firecracker microVMs for running untrusted or AI-generated code on Vercel. Millisecond startup with Active CPU pricing.
+
+- **Isolation:** Firecracker microVMs (each sandbox gets its own filesystem and network)
+- **Key features:** Millisecond cold starts, persistent sandboxes (auto-save state on stop), snapshots, network firewall with credentials brokering, up to 8 vCPUs / 2GB RAM per vCPU, live preview URLs (up to 4 ports), Node.js and Python runtimes
+- **Stateful:** Yes, persistent sandboxes with auto-save and snapshot/restore
 - **GPU:** No
-- **BYOC / Self-host:** Yes, self-hosted by default (bare metal, on-prem hypervisors, your own cloud VMs)
-- **SDKs:** Python (`qbox-sh`), REST + WebSocket API, CLI
-- **License:** Closed source
-- **Pricing:** Free to self-host.
+- **BYOC / Self-host:** No (runs on Vercel)
+- **SDKs:** JavaScript/TypeScript (`@vercel/sandbox`), Python (`vercel.sandbox`), CLI
+- **Pricing:** Active CPU pricing (pay only when code runs), up to 5h max session on Pro/Enterprise
+- **Providing sandboxes for:** Xata, Cua AI
+
 ---
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for the entry template, scope rules, and source policy.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the entry template and source policy.
+
+**Key rules:**
+1. Only include products that **provide sandboxes as a service** to others, not tools built for internal use only
+2. All information must come from official sources (docs, landing pages, official GitHub repos)
+3. No blog posts, tweets, or third-party articles as primary sources
+4. Keep entries factual, no marketing fluff
+5. Tell us a bit about yourself in the PR description. We favor contributions from people who actually build with sandboxes or are otherwise involved in the space, to keep the quality of this list high
 
 ## License
 
