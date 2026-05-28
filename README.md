@@ -10,9 +10,10 @@ All information sourced exclusively from official docs and landing pages. PRs we
 
 ---
 
-## Benchmarks
+## Sandbox Benchmarks
 
 - [ComputeSDK Sandbox Leaderboard](https://www.computesdk.com/benchmarks/sandboxes/) - Live TTI (Time to Interactive) benchmarks across sandbox providers. Measures median, P95, P99 startup times and success rates. [Methodology & raw data on GitHub.](https://github.com/computesdk/benchmarks)
+- [Agent Arena - Sandboxes](https://2027.dev/arena/sandboxes) - AI agent evaluation of sandbox providers. An autonomous coding agent (Claude Opus 4.6) discovers docs, installs packages, writes code, and verifies results. Ranked by time, cost, errors, and interruptions.
 - [Tensorlake SQLite Benchmark](https://github.com/tensorlakeai/sandbox-sqlite-bench) - SQLite insert benchmarks (100k rows) across Tensorlake, Vercel, E2B, Daytona, and Modal comparing filesystem I/O performance.
 
 ---
