@@ -199,6 +199,22 @@ Serverless cloud platform for AI with sandboxes, GPU compute, and sub-second col
 
 ---
 
+### [Northflank](https://northflank.com)
+[Website](https://northflank.com) | [Docs](https://northflank.com/docs)
+
+Full-stack AI infrastructure platform with microVM-backed sandboxes. Runs on Northflank's managed cloud or deploys into your own cloud account.
+
+- **Isolation:** Kata Containers (Cloud Hypervisor), Firecracker, or gVisor (user-space kernel isolation)
+- **Key features:** Sub-1s boot, any OCI container image, persistent volumes, public port exposure, built-in managed databases, preview environments, CI/CD pipelines
+- **Stateful:** Optional — ephemeral by default, persistent with attached volumes
+- **CPU/GPU:** Yes — CPU and GPU sandboxes (L4, A100, H100 and others via BYOC node pools)
+- **BYOC / Self-host:** Yes (AWS, GCP, Azure, Oracle, Civo, CoreWeave, bare-metal, on-prem)
+- **SDKs:** JavaScript/TypeScript, Python, REST API, CLI
+- **Compliance:** SOC 2 Type II
+- **Pricing:** $0.01667/vCPU-hr, $0.00833/GB-hr, billed per second. BYOC available self-serve at $0.01389/vCPU-hr + $0.00139/GB-hr management fee
+
+---
+
 ### [Morph](https://morph.so)
 [Website](https://morph.so) | [GitHub](https://github.com/morph-labs)
 
