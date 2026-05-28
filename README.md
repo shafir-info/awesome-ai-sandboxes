@@ -111,7 +111,7 @@ Persistent, isolated environments powered by Cloudflare Containers. Full compute
 Full Linux VMs for AI agents with built-in Git, live forking, and pause/resume. Sub-600ms provisioning.
 
 - **Isolation:** Full Linux VMs with KVM, nested virtualization support
-- **Key features:** <600ms VM provisioning, live forking (clone running VM in milliseconds), pause & resume, built-in multi-tenant Git with branching/diffs/webhooks, custom domains, VPCs, SSH access
+- **Key features:** <600ms VM provisioning, live forking (clone running VM in milliseconds), pause & resume, built-in multi-tenant Git with branching/diffs/webhooks, custom domains, VPCs, SSH access, high IO, largest VMs/most memory + disk available in public tiers.
 - **Stateful:** Yes, persistent VMs with suspend/resume, snapshots
 - **GPU:** Not specified
 - **BYOC / Self-host:** Not specified
