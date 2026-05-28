@@ -105,6 +105,21 @@ Persistent, isolated environments powered by Cloudflare Containers. Full compute
 
 ---
 
+### [Freestyle](https://freestyle.sh)
+[Website](https://freestyle.sh) | [Docs](https://freestyle.sh/docs) | [GitHub](https://github.com/freestyle-sh/freestyle-sh)
+
+Full Linux VMs for AI agents with built-in Git, live forking, and pause/resume. Sub-600ms provisioning.
+
+- **Isolation:** Full Linux VMs with KVM, nested virtualization support
+- **Key features:** <600ms VM provisioning, live forking (clone running VM in milliseconds), pause & resume, built-in multi-tenant Git with branching/diffs/webhooks, custom domains, VPCs, SSH access
+- **Stateful:** Yes, persistent VMs with suspend/resume, snapshots
+- **GPU:** Not specified
+- **BYOC / Self-host:** Not specified
+- **SDKs:** TypeScript (`freestyle`)
+- **Pricing:** Free tier (10 concurrent VMs), Hobby $50/month, Pro $500/month
+
+---
+
 ### [CodeSandbox](https://codesandbox.io)
 [Website](https://codesandbox.io) | [Docs](https://codesandbox.io/docs) | [GitHub](https://github.com/codesandbox)
 
@@ -162,6 +177,21 @@ Devbox infrastructure for building, benchmarking, and shipping AI coding agents 
 - **BYOC / Self-host:** Yes (deploy-to-VPC option)
 - **SDKs:** Python, TypeScript
 - **Pricing:** Free tier with $50 credits, usage-based compute
+
+---
+
+### [Tensorlake](https://tensorlake.ai)
+[Website](https://tensorlake.ai) | [Docs](https://docs.tensorlake.ai) | [GitHub](https://github.com/tensorlakeai/tensorlake)
+
+Lightspeed AI-native sandboxes. Stateful compute for durable agentic loops and isolated tool/code execution, powered by Firecracker and CloudHypervisor.
+
+- **Isolation:** Firecracker / CloudHypervisor microVMs
+- **Key features:** <300ms startup, dynamic CPU/memory/disk sizing per API call, snapshot/clone/replicate running sandboxes, live migration, durable orchestration with fan-out/retries/queues, RL environment support (10k+ concurrent)
+- **Stateful:** Yes, named sandboxes with suspend/resume in exact state
+- **GPU:** Not specified
+- **BYOC / Self-host:** Yes (deploy in your own AWS/GCP/Azure account)
+- **SDKs:** Python, TypeScript
+- **Pricing:** Free tier, usage-based (vCPU/hour, GiB-hour). SOC 2 Type II, HIPAA
 
 ---
 
