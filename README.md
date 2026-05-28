@@ -91,6 +91,22 @@ Production-grade sandbox runtime for AI agents.
 
 ---
 
+### [Superserve](https://www.superserve.ai)
+[Website](https://www.superserve.ai) | [Docs](https://docs.superserve.ai) | [GitHub](https://github.com/superserve-ai/superserve)
+
+Persistent and secure sandboxes for AI agents, powered by Firecracker microVMs.
+
+- **Isolation:** Firecracker microVMs
+- **Key features:** <200ms startup, unlimited session duration, credentials broker (API keys never exposed to agents), versioned filesystem with snapshot/rollback, per-sandbox egress rules
+- **Stateful:** Yes, full memory and disk state preserved on pause; sessions persist indefinitely
+- **GPU:** No
+- **BYOC / Self-host:** Yes (Enterprise)
+- **SDKs:** TypeScript (`@superserve/sdk`), Python (`superserve`)
+- **License:** Apache 2.0
+- **Pricing:** Free tier, usage-based (vCPU/hour, GiB/hour)
+
+---
+
 ## Closed Source
 
 ### [Blaxel](https://blaxel.ai)
