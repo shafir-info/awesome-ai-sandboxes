@@ -28,6 +28,24 @@ Secure cloud sandboxes for AI agents with real-world tools. Powered by Firecrack
 
 ---
 
+### [Beam](https://beam.cloud)
+
+[Website](https://beam.cloud) | [Docs](https://docs.beam.cloud) | [GitHub](https://github.com/beam-cloud/beta9)
+
+Open-source GPU sandboxes with checkpoint restore, durable task queues, and serverless inference endpoints. 
+
+- **Isolation:** gVisor or runc (configurable)
+- **Key features:** 
+GPU checkpoint restore, Docker-in-Docker support, storage volumes, and per-second billing. 
+- **Stateful:** Full memory and disk snapshots, plus distributed volumes for file storage
+- **GPU:** Yes
+- **BYOC / Self-host:** Yes (BYOC, on-prem, self-hosted)
+- **SDKs:** Python, JavaScript/TypeScript
+- **License:** AGPL 3.0
+- **Pricing:** $30 monthly free tier, pay-as-you-go
+
+---
+
 ### [Daytona](https://daytona.io)
 [Website](https://daytona.io) | [Docs](https://daytona.io/docs) | [GitHub](https://github.com/daytonaio/daytona)
 
