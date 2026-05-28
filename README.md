@@ -290,12 +290,7 @@ Self-hostable Firecracker microVM sandbox orchestrator for AI agents and untrust
 
 ## Contributing
 
-Want to add a provider or fix an error? Open a PR with a link to the provider's official documentation or landing page as the source.
-
-**Rules:**
-1. All information must come from official sources (docs, landing pages, official GitHub repos)
-2. No blog posts, tweets, or third-party articles as primary sources
-3. Keep entries factual, no marketing fluff
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the entry template, scope rules, and source policy.
 
 ## License
 
