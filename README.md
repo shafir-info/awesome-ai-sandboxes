@@ -180,6 +180,21 @@ Devbox infrastructure for building, benchmarking, and shipping AI coding agents 
 
 ---
 
+### [Vercel Sandbox](https://vercel.com/sandbox)
+[Website](https://vercel.com/sandbox) | [Docs](https://vercel.com/docs/sandbox) | [GitHub](https://github.com/vercel/sandbox)
+
+Secure Firecracker microVMs for running untrusted or AI-generated code on Vercel. Millisecond startup with Active CPU pricing.
+
+- **Isolation:** Firecracker microVMs (each sandbox gets its own filesystem and network)
+- **Key features:** Millisecond cold starts, persistent sandboxes (auto-save state on stop), snapshots, network firewall with credentials brokering, up to 8 vCPUs / 2GB RAM per vCPU, live preview URLs (up to 4 ports), Node.js and Python runtimes
+- **Stateful:** Yes, persistent sandboxes with auto-save and snapshot/restore
+- **GPU:** No
+- **BYOC / Self-host:** No (runs on Vercel)
+- **SDKs:** JavaScript/TypeScript (`@vercel/sandbox`), Python (`vercel.sandbox`), CLI
+- **Pricing:** Active CPU pricing (pay only when code runs), up to 5h max session on Pro/Enterprise
+
+---
+
 ### [Tensorlake](https://tensorlake.ai)
 [Website](https://tensorlake.ai) | [Docs](https://docs.tensorlake.ai) | [GitHub](https://github.com/tensorlakeai/tensorlake)
 
