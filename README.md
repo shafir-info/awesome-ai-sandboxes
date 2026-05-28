@@ -124,6 +124,21 @@ The perpetual sandbox platform. Sandboxes auto-suspend when idle and resume from
 
 ---
 
+### [Box](https://box.ascii.dev) (by ascii.dev)
+[Website](https://box.ascii.dev) | [Docs](https://docs.ascii.dev)
+
+Simple and affordable full VM sandbox for agents.
+
+- **Isolation:** Dedicated Linux (Ubuntu) VMs, one IPv4 per VM
+- **Key features:** Agent-friendly CLI, SSH/SCP access, fork, stop to pause billing, no session timeout, public HTTPS hosting (full TCP/UDP), 60fps desktop streaming + computer-use skills & CLI for agents, Docker in-VM, built-in agent harness (Claude Code, Codex)
+- **Stateful:** Yes, VMs persist; snapshot/fork and stop/resume
+- **GPU:** No
+- **BYOC / Self-host:** No (managed service, EU regions)
+- **SDKs:** CLI (`box`) with `--json` JSONL output for scripting
+- **Pricing:** $20/month minimum; $20 buys 2,000,000 VM-seconds (~555h) of a dedicated 4 vCPU / 8 GB VM, billed by the second. ~100 active VMs/account soft cap (raising)
+
+---
+
 ### [Cloudflare Sandboxes](https://developers.cloudflare.com/sandbox/)
 [Docs](https://developers.cloudflare.com/sandbox/) | [GitHub](https://github.com/cloudflare/sandbox-sdk) | [Blog](https://blog.cloudflare.com/sandbox-ga/)
 
