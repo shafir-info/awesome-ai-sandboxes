@@ -6,13 +6,32 @@ All information sourced exclusively from official docs and landing pages. PRs we
 
 > **Why this list?** There's a lot of noise and inaccurate info about sandbox providers online. This repo exists to fix that. Every claim here links back to the provider's own docs or landing page.
 
-![Awesome AI Sandboxes Market Map](assets/market-map.png)
+Awesome AI Sandboxes Market Map
 
 ---
 
 ## Open Source
 
+### [Beam](https://beam.cloud)
+
+[Website](https://beam.cloud) | [Docs](https://docs.beam.cloud) | [GitHub](https://github.com/beam-cloud/beta9)
+
+Open-source GPU sandboxes with checkpoint restore, durable task queues, and serverless inference endpoints. 
+
+- **Isolation:** gVisor or runc (configurable)
+- **Key features:** 
+GPU checkpoint restore, Docker-in-Docker support, storage volumes, and per-second billing. 
+- **Stateful:** Full memory and disk snapshots, plus distributed volumes for file storage
+- **GPU:** Yes
+- **BYOC / Self-host:** Yes (BYOC, on-prem, self-hosted)
+- **SDKs:** Python, JavaScript/TypeScript
+- **License:** AGPL 3.0
+- **Pricing:** $30 monthly free tier, pay-as-you-go
+
+---
+
 ### [E2B](https://e2b.dev)
+
 [Website](https://e2b.dev) | [Docs](https://e2b.dev/docs) | [GitHub](https://github.com/e2b-dev/E2B)
 
 Secure cloud sandboxes for AI agents with real-world tools. Powered by Firecracker microVMs.
@@ -29,6 +48,7 @@ Secure cloud sandboxes for AI agents with real-world tools. Powered by Firecrack
 ---
 
 ### [Daytona](https://daytona.io)
+
 [Website](https://daytona.io) | [Docs](https://daytona.io/docs) | [GitHub](https://github.com/daytonaio/daytona)
 
 Secure and elastic infrastructure for running AI-generated code. Sub-90ms sandbox creation.
@@ -45,6 +65,7 @@ Secure and elastic infrastructure for running AI-generated code. Sub-90ms sandbo
 ---
 
 ### [OpenComputer](https://opencomputer.dev)
+
 [Website](https://opencomputer.dev) | [Docs](https://docs.opencomputer.dev) | [GitHub](https://github.com/diggerhq/opencomputer)
 
 Persistent cloud VMs for AI agents by Digger. Full Linux machines that hibernate when idle and wake in seconds.
@@ -60,6 +81,7 @@ Persistent cloud VMs for AI agents by Digger. Full Linux machines that hibernate
 ---
 
 ### [OpenSandbox](https://open-sandbox.ai) (by Alibaba)
+
 [Website](https://open-sandbox.ai) | [GitHub](https://github.com/alibaba/OpenSandbox)
 
 Production-grade sandbox runtime for AI agents.
@@ -76,6 +98,7 @@ Production-grade sandbox runtime for AI agents.
 ## Closed Source
 
 ### [Blaxel](https://blaxel.ai)
+
 [Website](https://blaxel.ai) | [Docs](https://docs.blaxel.ai) | [GitHub](https://github.com/blaxel-ai)
 
 The perpetual sandbox platform. Sandboxes auto-suspend when idle and resume from standby in ~25ms with full memory state.
@@ -91,6 +114,7 @@ The perpetual sandbox platform. Sandboxes auto-suspend when idle and resume from
 ---
 
 ### [Cloudflare Sandboxes](https://developers.cloudflare.com/sandbox/)
+
 [Docs](https://developers.cloudflare.com/sandbox/) | [GitHub](https://github.com/cloudflare/sandbox-sdk) | [Blog](https://blog.cloudflare.com/sandbox-ga/)
 
 Persistent, isolated environments powered by Cloudflare Containers. Full computer for AI agents with shell, filesystem, and background processes.
@@ -106,6 +130,7 @@ Persistent, isolated environments powered by Cloudflare Containers. Full compute
 ---
 
 ### [Freestyle](https://freestyle.sh)
+
 [Website](https://freestyle.sh) | [Docs](https://freestyle.sh/docs) | [GitHub](https://github.com/freestyle-sh/freestyle-sh)
 
 Full Linux VMs for AI agents with built-in Git, live forking, and pause/resume. Sub-600ms provisioning.
@@ -121,6 +146,7 @@ Full Linux VMs for AI agents with built-in Git, live forking, and pause/resume. 
 ---
 
 ### [CodeSandbox](https://codesandbox.io)
+
 [Website](https://codesandbox.io) | [Docs](https://codesandbox.io/docs) | [GitHub](https://github.com/codesandbox)
 
 Cloud sandbox platform (now part of Together AI) for isolated microVM environments for AI agents.
@@ -136,6 +162,7 @@ Cloud sandbox platform (now part of Together AI) for isolated microVM environmen
 ---
 
 ### [Modal](https://modal.com)
+
 [Website](https://modal.com) | [Docs](https://modal.com/docs) | [GitHub](https://github.com/modal-labs)
 
 Serverless cloud platform for AI with sandboxes, GPU compute, and sub-second cold starts.
@@ -151,6 +178,7 @@ Serverless cloud platform for AI with sandboxes, GPU compute, and sub-second col
 ---
 
 ### [Morph](https://morph.so)
+
 [Website](https://morph.so) | [GitHub](https://github.com/morph-labs)
 
 Cloud infrastructure for AI agents with instant environment branching and burst scalability.
@@ -166,6 +194,7 @@ Cloud infrastructure for AI agents with instant environment branching and burst 
 ---
 
 ### [Runloop](https://runloop.ai)
+
 [Website](https://runloop.ai) | [Docs](https://docs.runloop.ai) | [GitHub](https://github.com/runloopai)
 
 Devbox infrastructure for building, benchmarking, and shipping AI coding agents at enterprise scale.
@@ -181,6 +210,7 @@ Devbox infrastructure for building, benchmarking, and shipping AI coding agents 
 ---
 
 ### [Vercel Sandbox](https://vercel.com/sandbox)
+
 [Website](https://vercel.com/sandbox) | [Docs](https://vercel.com/docs/sandbox) | [GitHub](https://github.com/vercel/sandbox)
 
 Secure Firecracker microVMs for running untrusted or AI-generated code on Vercel. Millisecond startup with Active CPU pricing.
@@ -196,6 +226,7 @@ Secure Firecracker microVMs for running untrusted or AI-generated code on Vercel
 ---
 
 ### [Tensorlake](https://tensorlake.ai)
+
 [Website](https://tensorlake.ai) | [Docs](https://docs.tensorlake.ai) | [GitHub](https://github.com/tensorlakeai/tensorlake)
 
 Lightspeed AI-native sandboxes. Stateful compute for durable agentic loops and isolated tool/code execution, powered by Firecracker and CloudHypervisor.
@@ -211,6 +242,7 @@ Lightspeed AI-native sandboxes. Stateful compute for durable agentic loops and i
 ---
 
 ### [Sprites](https://sprites.dev) (by Fly.io)
+
 [Website](https://sprites.dev) | [Docs](https://docs.sprites.dev) | [API](https://sprites.dev/api)
 
 Persistent, hardware-isolated execution environments. A Sprite is a full Linux computer with stateful filesystem, unlimited checkpoints, and granular billing.
@@ -224,7 +256,9 @@ Persistent, hardware-isolated execution environments. A Sprite is a full Linux c
 - **Pricing:** Pay for actual usage: $0.07/CPU-hour, $0.04375/GB-hour memory, $30 trial credits
 
 ---
+
 ### [qbox](https://qbox.sh)
+
 [Website](https://qbox.sh) | [Docs](https://qbox.sh/docs)
 
 Self-hostable Firecracker microVM sandbox orchestrator for AI agents and untrusted code. Runs on your own Linux hosts.
@@ -237,6 +271,7 @@ Self-hostable Firecracker microVM sandbox orchestrator for AI agents and untrust
 - **SDKs:** Python (`qbox-sh`), REST + WebSocket API, CLI
 - **License:** Closed source
 - **Pricing:** Free to self-host.
+
 ---
 
 ## Contributing
@@ -244,6 +279,7 @@ Self-hostable Firecracker microVM sandbox orchestrator for AI agents and untrust
 Want to add a provider or fix an error? Open a PR with a link to the provider's official documentation or landing page as the source.
 
 **Rules:**
+
 1. All information must come from official sources (docs, landing pages, official GitHub repos)
 2. No blog posts, tweets, or third-party articles as primary sources
 3. Keep entries factual, no marketing fluff
