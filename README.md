@@ -6,7 +6,7 @@ All information sourced exclusively from official docs and landing pages. PRs we
 
 > **Why this list?** There's a lot of noise and inaccurate info about sandbox providers online. This repo exists to fix that. Every claim here links back to the provider's own docs or landing page.
 
-![Awesome AI Sandboxes Market Map](assets/AI Sandboxes Market Map.png)
+![Awesome AI Sandboxes Market Map](assets/latest-visual.png)
 
 ---
 
