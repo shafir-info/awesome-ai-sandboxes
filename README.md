@@ -214,6 +214,21 @@ Cloud infrastructure for AI agents with instant environment branching and burst 
 
 ---
 
+### [Novita AI Agent Sandbox](https://novita.ai/sandbox)
+[Website](https://novita.ai/sandbox) | [Docs](https://novita.ai/docs/guides/sandbox-your-first-agent-sandbox) | [Pricing](https://novita.ai/docs/guides/sandbox-pricing)
+
+Fast, secure cloud sandboxes for AI agents to run code, browse the web, use desktop environments, call external APIs, and keep long-running tasks alive across sessions.
+
+- **Isolation:** Isolated cloud sandbox environments with system-level separation
+- **Key features:** Sub-200ms average startup, high-concurrency sandbox creation, code execution, browser automation, full desktop computer use, live session viewing, external API access, persistent sessions, custom sandbox templates, and E2B SDK compatibility
+- **Stateful:** Yes, sandboxes can pause and resume with filesystem and memory state preserved
+- **GPU:** No
+- **BYOC / Self-host:** Not supported
+- **SDKs:** Python, JavaScript/TypeScript, CLI, and E2B-compatible SDKs
+- **Pricing:** Usage-based, billed per second by vCPU and memory; templates are currently free
+
+---
+
 ### [Runloop](https://runloop.ai)
 [Website](https://runloop.ai) | [Docs](https://docs.runloop.ai) | [GitHub](https://github.com/runloopai)
 
