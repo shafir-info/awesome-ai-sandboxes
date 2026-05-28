@@ -218,8 +218,8 @@ Full Linux VMs for AI agents with built-in Git, live forking, and pause/resume. 
 - **Isolation:** Full Linux VMs with KVM, nested virtualization support
 - **Key features:** <600ms VM provisioning, live forking (clone running VM in milliseconds), pause & resume, built-in multi-tenant Git with branching/diffs/webhooks, custom domains, VPCs, SSH access, high IO, largest VMs/most memory + disk available in public tiers
 - **Stateful:** Yes, persistent VMs with suspend/resume, snapshots
-- **GPU:** No
-- **BYOC / Self-host:** Yes
+- **GPU:** Not specified
+- **BYOC / Self-host:** Not specified
 - **SDKs:** TypeScript (`freestyle`)
 - **Pricing:** Free tier (10 concurrent VMs), Hobby $50/month, Pro $500/month
 - **Providing sandboxes for:** Onlook, Wordware, HeroUI, Rork, Vibeflow
@@ -388,8 +388,8 @@ Cloud microVM platform for AI agents. Boots isolated Firecracker sandboxes for c
 - **Isolation:** Firecracker microVMs with dedicated Linux kernel, filesystem, memory, CPU, and configurable egress
 - **Key features:** Sub-200ms cold boots, <10ms warm session reuse, <500ms snapshot restore, persistent sessions, volumes, VM clone/fan-out, browser automation and computer use, public/private shares and custom domains
 - **Stateful:** Yes, sessions persist between execute calls; ephemeral by default, with volumes and snapshots for durable state
-- **GPU:** Not specified
-- **BYOC / Self-host:** Not specified
+- **GPU:** No
+- **BYOC / Self-host:** Yes
 - **SDKs:** Python (`instavm`), TypeScript, CLI (`instavm`), REST API
 - **Pricing:** Free plan with $50 credits and $0 base plus usage; Pro starts at $100/month base plus usage
 
