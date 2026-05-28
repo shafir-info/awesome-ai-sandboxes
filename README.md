@@ -224,6 +224,20 @@ Persistent, hardware-isolated execution environments. A Sprite is a full Linux c
 - **Pricing:** Pay for actual usage: $0.07/CPU-hour, $0.04375/GB-hour memory, $30 trial credits
 
 ---
+### [qbox](https://qbox.sh)
+[Website](https://qbox.sh) | [Docs](https://qbox.sh/docs)
+
+Self-hostable Firecracker microVM sandbox orchestrator for AI agents and untrusted code. Runs on your own Linux hosts.
+
+- **Isolation:** Firecracker microVMs (full VM with own kernel, hardware-level isolation)
+- **Key features:** Self-hosted by design, persistent volumes, port forwarding with HTTPS previews, browser sessions over CDP, templates from any OCI image, operator dashboard, single-host installer (`curl -fsSL https://qbox.sh/install.sh | sh`)
+- **Stateful:** Sandboxes are ephemeral, mount object storage volumes for persistence
+- **GPU:** No
+- **BYOC / Self-host:** Yes, self-hosted by default (bare metal, on-prem hypervisors, your own cloud VMs)
+- **SDKs:** Python (`qbox-sh`), REST + WebSocket API, CLI
+- **License:** Closed source
+- **Pricing:** Free to self-host.
+---
 
 ## Contributing
 
