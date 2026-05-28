@@ -156,13 +156,13 @@ Cloud sandbox platform (now part of Together AI) for isolated microVM environmen
 ### [Islo](https://islo.dev)
 [Website](https://islo.dev) | [Docs](https://docs.islo.dev/overview) | [GitHub](https://github.com/islo-labs/python-sdk)
 
-Long-running AI sandboxes for coding agents. Real Linux VMs with persistent state and security controls for connected agent workflows.
+Long-running AI sandboxes for coding agents. Persistent microVM environments with security controls for connected agent workflows.
 
 - **Isolation:** Dedicated microVMs (hardware-level isolation)
-- **Key features:** Gateway profiles (network policy, credential injection, LLM-as-judge filters), cloud roles (AWS IAM assume-role via STS), first-class coding agent support, native integrations (GitHub, Slack, Linear, Jira), snapshots
+- **Key features:** Gateway profiles (network policy, credential injection, LLM-as-judge filters), cloud roles (AWS IAM assume-role via STS), first-class coding agent support, native integrations (GitHub, Slack, Linear, Jira), end-customer BYOC for multi-tenant agent products, snapshots
 - **Stateful:** Yes, persistent environments with pause/resume and snapshot/restore
 - **GPU:** Yes
-- **BYOC / Self-host:** Yes (startup or end-customer cloud)
+- **BYOC / Self-host:** Yes (your cloud or your customer's cloud)
 - **SDKs:** Python, TypeScript, Go, Rust
 - **Pricing:** Usage-based ($0.07/CPU-hour, $0.04/GB-hour, $0.0007/GB-hour storage)
 
