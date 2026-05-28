@@ -199,6 +199,21 @@ Cloud sandbox platform (now part of Together AI) for isolated microVM environmen
 
 ---
 
+### [Leap0](https://leap0.dev)
+[Website](https://leap0.dev) | [Docs](https://leap0.dev/docs) | [GitHub](https://github.com/leap0-dev)
+
+Cloud sandboxes for AI agents. Spin up Firecracker microVMs in ~100ms.
+
+- **Isolation:** Firecracker microVMs with Jailer
+- **Key features:** ~100ms cold start, any container image as template, checkpoint/restore snapshots, pause/resume, desktop (computer use), Git integration, LSP support, network firewall with credential brokering, object storage mounts
+- **Stateful:** Yes, pause/resume, checkpoint snapshots with restore
+- **GPU:** No
+- **BYOC / Self-host:** Yes (BYOC and on-premises)
+- **SDKs:** Python, TypeScript
+- **Pricing:** Free during public preview, $0.0504/vCPU-hour, $0.0162/GB-hour
+
+---
+
 ### [Islo](https://islo.dev)
 [Website](https://islo.dev) | [Docs](https://docs.islo.dev/overview) | [GitHub](https://github.com/islo-labs/python-sdk)
 
