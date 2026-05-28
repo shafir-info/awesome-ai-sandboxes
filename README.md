@@ -107,6 +107,22 @@ Persistent and secure sandboxes for AI agents, powered by Firecracker microVMs.
 
 ---
 
+### [Steel.dev](https://steel.dev)
+[Website](https://steel.dev) | [Docs](https://docs.steel.dev) | [GitHub](https://github.com/steel-dev/steel-browser)
+
+Open-source browser API for AI agents and apps. Sandboxed Chrome sessions with anti-detection, session viewer, and computer-use integrations.
+
+- **Isolation:** Docker containers (Chrome via Puppeteer/CDP)
+- **Key features:** Up to 24h sessions, auto CAPTCHA solving, proxy chain management, stealth + fingerprint plugins, session viewer (live and recorded), cookie/localStorage persistence, computer-use integrations (Claude, Gemini, OpenAI), agent framework integrations (LangGraph, CrewAI, Pydantic AI, Vercel AI SDK)
+- **Stateful:** Yes, session state (cookies, local storage) persists and can be reused across sessions
+- **GPU:** Not specified
+- **BYOC / Self-host:** Yes (self-host via Docker; Steel Cloud also available)
+- **SDKs:** Python (`steel-sdk`), Node.js/TypeScript (`steel-sdk`), CLI
+- **License:** Apache 2.0
+- **Pricing:** Free tier ($10/month in credits), paid tiers $29–$499/month with included browser hours and bandwidth
+
+---
+
 ## Closed Source
 
 ### [Blaxel](https://blaxel.ai)
