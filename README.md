@@ -207,7 +207,7 @@ Full-stack AI infrastructure platform with microVM-backed sandboxes. Runs on Nor
 - **Isolation:** Kata Containers (Cloud Hypervisor), Firecracker, or gVisor (user-space kernel isolation)
 - **Key features:** Sub-1s boot, any OCI container image, persistent volumes, public port exposure, built-in managed databases, preview environments, CI/CD pipelines
 - **Stateful:** Optional — ephemeral by default, persistent with attached volumes
-- **CPU/GPU:** Yes — CPU and GPU sandboxes (L4, A100, H100 and others via BYOC node pools)
+- **CPU/GPU:** Yes — CPU and GPU sandboxes (L4, A100, H100, on Northflank compute or BYOC)
 - **BYOC / Self-host:** Yes (AWS, GCP, Azure, Oracle, Civo, CoreWeave, bare-metal, on-prem)
 - **SDKs:** JavaScript/TypeScript, Python, REST API, CLI
 - **Compliance:** SOC 2 Type II
