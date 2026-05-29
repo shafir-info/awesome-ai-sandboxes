@@ -33,6 +33,7 @@ Secure cloud sandboxes for AI agents with real-world tools. Powered by Firecrack
 - **BYOC / Self-host:** Yes (BYOC, on-prem, self-hosted)
 - **SDKs:** Python, JavaScript/TypeScript
 - **License:** Apache 2.0
+- **Long-running:** Up to 1 hour (Hobby), up to 24 hours (Pro)
 - **Pricing:** Free tier available, pay-as-you-go
 - **Providing sandboxes for:** Hugging Face, Manus, Groq, Lindy, Genspark, Athena, Gumloop
 
@@ -49,6 +50,7 @@ Open-source GPU sandboxes with checkpoint restore, durable task queues, and serv
 - **GPU:** Yes
 - **BYOC / Self-host:** Yes (BYOC, on-prem, self-hosted)
 - **SDKs:** Python, JavaScript/TypeScript
+- **Long-running:** Unlimited (configurable auto-shutdown)
 - **License:** AGPL 3.0
 - **Pricing:** $30 monthly free tier, pay-as-you-go
 
@@ -65,6 +67,7 @@ Secure and elastic infrastructure for running AI-generated code. Sub-90ms sandbo
 - **GPU:** Yes (Nvidia H100, RTX PRO 6000)
 - **BYOC / Self-host:** Yes (customer-managed compute, on-prem)
 - **SDKs:** Python, TypeScript
+- **Long-running:** Unlimited (auto-stop after 15min idle by default, configurable to run indefinitely)
 - **License:** Apache 2.0
 - **Pricing:** Pay-as-you-go per second, $200 free compute included
 - **Providing sandboxes for:** LangChain, Turing, AfterQuery, Mintlify, SambaNova, Elementor, Writer, Mastra, Prosus, Tessl, Snorkel AI, CoreWeave, Parabola
@@ -138,6 +141,7 @@ Open source AI sandbox with flexible microVM backends - ships with QEMU and Fire
 Persistent and secure sandboxes for AI agents, powered by Firecracker microVMs.
 
 - **Isolation:** Firecracker microVMs
+- **Long-running:** Unlimited session duration
 - **Key features:** <200ms startup, unlimited session duration, credentials broker (API keys never exposed to agents), versioned filesystem with snapshot/rollback, per-sandbox egress rules
 - **Stateful:** Yes, full memory and disk state preserved on pause; sessions persist indefinitely
 - **GPU:** No
@@ -177,6 +181,7 @@ The perpetual sandbox platform. Sandboxes auto-suspend when idle and resume from
 - **GPU:** No
 - **BYOC / Self-host:** No
 - **SDKs:** TypeScript, Python
+- **Long-running:** Auto-suspend after idle, resume in ~25ms; TTL configurable
 - **Pricing:** Pay for active compute only, $0 on standby. SOC 2, HIPAA, ISO 27001
 - **Providing sandboxes for:** Shortwave, Strapi, Webflow
 
@@ -188,6 +193,7 @@ The perpetual sandbox platform. Sandboxes auto-suspend when idle and resume from
 Simple and affordable full VM sandbox for agents.
 
 - **Isolation:** Dedicated Linux (Ubuntu) VMs, one IPv4 per VM
+- **Long-running:** No session timeout; timed extension up to 30 days
 - **Key features:** Agent-friendly CLI, SSH/SCP access, fork, stop to pause billing, no session timeout, public HTTPS hosting (full TCP/UDP), 60fps desktop streaming + computer-use skills & CLI for agents, Docker in-VM, built-in agent harness (Claude Code, Codex)
 - **Stateful:** Yes, VMs persist; snapshot/fork and stop/resume
 - **GPU:** No
@@ -236,6 +242,7 @@ Full Linux VMs for AI agents with built-in Git, live forking, and pause/resume. 
 - **Isolation:** Full Linux VMs with KVM, nested virtualization support
 - **Key features:** <600ms VM provisioning, live forking (clone running VM in milliseconds), pause & resume, built-in multi-tenant Git with branching/diffs/webhooks, custom domains, VPCs, SSH access, high IO, largest VMs/most memory + disk available in public tiers
 - **Stateful:** Yes, persistent VMs with suspend/resume, snapshots
+- **Long-running:** Unlimited (configurable idle timeout, can be set to null for indefinite)
 - **GPU:** Not specified
 - **BYOC / Self-host:** Not specified
 - **SDKs:** TypeScript (`freestyle`)
@@ -282,6 +289,7 @@ Serverless cloud platform for AI with sandboxes, GPU compute, and sub-second col
 - **Isolation:** Sandboxes with ephemeral isolated environments
 - **Key features:** Pay-per-second billing, sub-second container boots, autoscale 0 to 1000+ GPUs, SOC2 & HIPAA compliant
 - **Stateful:** Sandboxes are ephemeral; volumes available for persistence
+- **Long-running:** Default 5 minutes, configurable up to 24 hours
 - **GPU:** Yes (H100, A100, L40S, A10, L4, T4, B200, H200)
 - **BYOC / Self-host:** No
 - **SDKs:** Python (primary), TypeScript/Go via libmodal
@@ -374,6 +382,7 @@ Lightspeed AI-native sandboxes. Stateful compute for durable agentic loops and i
 - **Isolation:** Firecracker / CloudHypervisor microVMs
 - **Key features:** <300ms startup, dynamic CPU/memory/disk sizing per API call, snapshot/clone/replicate running sandboxes, live migration, durable orchestration with fan-out/retries/queues, RL environment support (10k+ concurrent)
 - **Stateful:** Yes, named sandboxes with suspend/resume in exact state
+- **Long-running:** Idle timeout 2h (Free), 24h (On-Demand)
 - **GPU:** Not specified
 - **BYOC / Self-host:** Yes (deploy in your own AWS/GCP/Azure account)
 - **SDKs:** Python, TypeScript
@@ -390,6 +399,7 @@ Secure Firecracker microVMs for running untrusted or AI-generated code on Vercel
 - **Isolation:** Firecracker microVMs (each sandbox gets its own filesystem and network)
 - **Key features:** Millisecond cold starts, persistent sandboxes (auto-save state on stop), snapshots, network firewall with credentials brokering, up to 8 vCPUs / 2GB RAM per vCPU, live preview URLs (up to 4 ports), Node.js and Python runtimes
 - **Stateful:** Yes, persistent sandboxes with auto-save and snapshot/restore
+- **Long-running:** Default 5 minutes; up to 45 minutes (Hobby), up to 5 hours (Pro/Enterprise)
 - **GPU:** No
 - **BYOC / Self-host:** No (runs on Vercel)
 - **SDKs:** JavaScript/TypeScript (`@vercel/sandbox`), Python (`vercel.sandbox`), CLI
