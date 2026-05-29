@@ -398,6 +398,21 @@ Secure Firecracker microVMs for running untrusted or AI-generated code on Vercel
 
 ---
 
+### [InstaVM](https://instavm.io)
+[Website](https://instavm.io) | [Docs](https://instavm.io/docs) | [Pricing](https://instavm.io/pricing) | [GitHub](https://github.com/instavm/coderunner)
+
+Cloud microVM platform for AI agents. Boots isolated Firecracker sandboxes for code execution, browser automation, app previews, and persistent VM workflows.
+
+- **Isolation:** Firecracker microVMs with dedicated Linux kernel, filesystem, memory, CPU, and configurable egress
+- **Key features:** Sub-200ms cold boots, <10ms warm session reuse, <500ms snapshot restore, persistent sessions, volumes, VM clone/fan-out, browser automation and computer use, public/private shares and custom domains
+- **Stateful:** Yes, sessions persist between execute calls; ephemeral by default, with volumes and snapshots for durable state
+- **GPU:** No
+- **BYOC / Self-host:** Yes
+- **SDKs:** Python (`instavm`), TypeScript, CLI (`instavm`), REST API
+- **Pricing:** Free plan with $50 credits and $0 base plus usage; Pro starts at $100/month base plus usage
+
+---
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the entry template and source policy.
