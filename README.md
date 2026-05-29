@@ -77,7 +77,7 @@ Secure and elastic infrastructure for running AI-generated code. Sub-90ms sandbo
 Secure, programmable microVMs for AI agents. Local-first, with a 1:1 interoperable managed cloud in private beta.
 
 - **Isolation:** libkrun microVMs, every sandbox gets its own kernel (KVM on Linux, Hypervisor.framework on macOS; Windows via WSL2)
-- **Key features:** Programmable from the ground up (networks, secrets, fs, init, kernel), real secrets never enter the VM, sub-100ms boots, 1:1 interoperable local and cloud sandboxes (private beta), any OCI image
+- **Key features:** Programmable from the ground up (networks, secrets, fs, init, kernel), real secrets never enter the VM, sub-100ms boots, 1:1 interoperable local and cloud sandboxes, any OCI image, Docker-in-VM
 - **Stateful:** Yes, named sandboxes with start/stop lifecycle and disk snapshots
 - **GPU:** No
 - **Embeddable:** Yes, SDK with the runtime built in
