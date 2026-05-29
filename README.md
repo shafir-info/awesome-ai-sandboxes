@@ -15,6 +15,7 @@ All information sourced exclusively from official docs and landing pages. PRs we
 - [ComputeSDK Sandbox Leaderboard](https://www.computesdk.com/benchmarks/sandboxes/) - Live TTI (Time to Interactive) benchmarks across sandbox providers. Measures median, P95, P99 startup times and success rates. [Methodology & raw data on GitHub.](https://github.com/computesdk/benchmarks)
 - [Agent Arena - Sandboxes](https://2027.dev/arena/sandboxes) - AI agent evaluation of sandbox providers. An autonomous coding agent (Claude Opus 4.6) discovers docs, installs packages, writes code, and verifies results. Ranked by time, cost, errors, and interruptions.
 - [Tensorlake SQLite Benchmark](https://github.com/tensorlakeai/sandbox-sqlite-bench) - SQLite insert benchmarks (100k rows) across Tensorlake, Vercel, E2B, Daytona, and Modal comparing filesystem I/O performance.
+- [microsandbox sandbox-bench](https://github.com/superradcompany/sandbox-bench) - Cold-start boot-time and guest-visible filesystem benchmarks across microsandbox, libkrun, Docker, Firecracker, and Cloud Hypervisor.
 
 ---
 
@@ -67,6 +68,23 @@ Secure and elastic infrastructure for running AI-generated code. Sub-90ms sandbo
 - **License:** Apache 2.0
 - **Pricing:** Pay-as-you-go per second, $200 free compute included
 - **Providing sandboxes for:** LangChain, Turing, AfterQuery, Mintlify, SambaNova, Elementor, Writer, Mastra, Prosus, Tessl, Snorkel AI, CoreWeave, Parabola
+
+---
+
+### [microsandbox](https://microsandbox.dev)
+[Website](https://microsandbox.dev) | [Docs](https://docs.microsandbox.dev) | [GitHub](https://github.com/superradcompany/microsandbox)
+
+Secure, programmable microVMs for AI agents. Local-first, with a 1:1 interoperable managed cloud in private beta.
+
+- **Isolation:** libkrun microVMs, every sandbox gets its own kernel (KVM on Linux, Hypervisor.framework on macOS; Windows via WSL2)
+- **Key features:** Programmable from the ground up (networks, secrets, fs, init, kernel), real secrets never enter the VM, sub-100ms boots, 1:1 interoperable local and cloud sandboxes, any OCI image, Docker-in-VM
+- **Stateful:** Yes, named sandboxes with start/stop lifecycle and disk snapshots
+- **GPU:** No
+- **Embeddable:** Yes, SDK with the runtime built in
+- **BYOC / Self-host:** Yes (self-host the runtime)
+- **SDKs:** Rust, Python, TypeScript, Go, CLI (`msb`)
+- **License:** Apache 2.0 (local runtime)
+- **Pricing:** Free locally, cloud pricing out post private beta
 
 ---
 
