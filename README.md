@@ -423,6 +423,22 @@ Cloud microVM platform for AI agents. Boots isolated Firecracker sandboxes for c
 
 ---
 
+### [Declaw](https://declaw.ai)
+[Website](https://declaw.ai) | [Docs](https://docs.declaw.ai)
+
+Firecracker microVM sandboxes with a 6-stage security pipeline — PII redaction, prompt injection defense, network policies, and audit logging.
+
+- **Isolation:** Firecracker microVMs with dedicated network namespace per sandbox
+- **Key features:** 6-stage security pipeline (network policies, domain filtering, TLS interception, guardrails, transformations, audit logging), sub-200ms cold start, 8 pre-built templates, custom templates from Dockerfiles, MCP server sandboxing via CLI, PTY terminal access, port proxy
+- **Stateful:** Yes, snapshots (memory + filesystem + process state), volumes, pause/resume
+- **GPU:** No
+- **BYOC / Self-host:** Yes (self-hosted on AWS with Terraform + Helm)
+- **SDKs:** Python, TypeScript, Go, CLI (`declaw`)
+- **Long-running:** Up to 1 hour (Free), 72 hours (Pro), 7 days (Enterprise)
+- **Pricing:** $300 in free credits, usage-based
+
+---
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the entry template and source policy.
