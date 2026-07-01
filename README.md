@@ -168,6 +168,22 @@ Open-source browser API for AI agents and apps. Sandboxed Chrome sessions with a
 
 ---
 
+### [h5i](https://github.com/h5i-dev/h5i)
+[GitHub](https://github.com/h5i-dev/h5i)
+
+Open-source CLI that runs multiple coding agents on one task, each in its own sealed git-worktree sandbox to prevent file, branch, and port clashes.
+
+- **Isolation:** Per-agent sealed git worktrees (one isolated worktree per agent)
+- **Key features:** Runs multiple coding agents (Claude Code, Codex) on the same task, per-agent sealed sandboxes with no file/branch/port clashes, cross-agent peer review, neutral verifier that replays and tests each candidate then merges the one that passes, run metadata versioned in the repo under `refs/h5i/*`
+- **Stateful:** Yes (runs versioned in your Git under `refs/h5i/*`)
+- **GPU:** Not specified
+- **BYOC / Self-host:** Yes (runs locally, no SaaS)
+- **SDKs:** CLI (Rust)
+- **License:** Apache 2.0
+- **Pricing:** Free (open source)
+
+---
+
 ## Closed Source
 
 ### [Blaxel](https://blaxel.ai)
