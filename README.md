@@ -186,6 +186,22 @@ Open-source CLI that runs multiple coding agents on one task, each in its own se
 
 ## Closed Source
 
+### [Baponi](https://baponi.ai)
+[Website](https://baponi.ai) | [Docs](https://baponi.ai/docs) | [GitHub](https://github.com/baponi/baponi-sdk)
+
+Sandboxes for AI agents billed only when code runs. Sessions persist for weeks at zero idle cost; your S3/GCS/Azure bucket mounts as a local filesystem.
+
+- **Isolation:** nsjail with Linux namespace isolation (mount, PID, network, IPC, UTS), seccomp-bpf syscall allowlist, and zero Linux capabilities
+- **Key features:** Zero idle cost (billed per execution, nothing runs or bills between agent calls), sessions resume days or weeks later with installed packages, env vars, and files intact (no pause/resume orchestration to build), your own S3/GCS/Azure bucket mounted as a local filesystem so pandas and CLI tools read cloud data unmodified (no upload/download step, data never leaves your bucket), bucket credentials kernel-isolated outside the sandbox, MCP server (Claude Desktop, Cursor, Windsurf, any MCP client) + REST API + Python SDK, LangChain / OpenAI / Anthropic / Gemini / CrewAI integrations, custom OCI images, per-sandbox kernel-level network policies
+- **Stateful:** Yes. State persists between calls with a single session parameter; sessions resume days or weeks later. Agents never manage container lifecycle.
+- **Long-running:** Sessions persist across calls for days or weeks at zero idle cost; single executions up to 60s (Free), 1 hour (Pro), unlimited (Enterprise)
+- **GPU:** Not specified
+- **BYOC / Self-host:** Yes (Enterprise). One Helm chart deploys the entire platform in your own Kubernetes cluster and VPC (GKE, EKS, AKS, OpenShift, bare-metal); air-gapped environments supported; bring your own OIDC provider and database; operational in hours.
+- **SDKs:** Python (`pip install baponi`); also accessible via MCP and REST API
+- **Pricing:** Per execution, not per second, with no idle charges. Free ($0, 1,000 credits/month, no credit card); Pro ($97/month, 10,000 credits included, then $1.00 per additional 1K); Enterprise (custom, self-hosted)
+
+---
+
 ### [Blaxel](https://blaxel.ai)
 [Website](https://blaxel.ai) | [Docs](https://docs.blaxel.ai) | [GitHub](https://github.com/blaxel-ai)
 
