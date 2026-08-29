@@ -184,6 +184,22 @@ Open-source CLI that runs multiple coding agents on one task, each in its own se
 
 ---
 
+### [distro-rig-vps](https://github.com/shafir-info/distro-rig-vps)
+[Docs](https://github.com/shafir-info/distro-rig-vps/wiki) | [GitHub](https://github.com/shafir-info/distro-rig-vps)
+
+Self-hosted disposable Linux VMs for coding agents that need real guest root without giving the driving account host hypervisor privileges.
+
+- **Isolation:** Full KVM/libvirt VMs with their own kernel and real PID 1 systemd
+- **Key features:** Root inside the guest, no host sudo/`/dev/kvm`/libvirt access for the agent account, deny-by-default guest egress, local package cache, copy-on-write pinned bases, snapshots and clean recreate
+- **Stateful:** Yes, owner-scoped snapshots; `recreate` resets a VM from its pinned golden image or snapshot
+- **GPU:** Not specified
+- **BYOC / Self-host:** Yes (self-hosted on a Linux KVM/libvirt host)
+- **SDKs:** CLI (`rigctl`)
+- **License:** GPL-3.0-or-later
+- **Pricing:** Free (open source)
+
+---
+
 ## Closed Source
 
 ### [Baponi](https://baponi.ai)
