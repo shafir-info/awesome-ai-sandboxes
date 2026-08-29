@@ -191,6 +191,9 @@ Self-hosted disposable Linux VMs for coding agents that need real guest root wit
 
 - **Isolation:** Full KVM/libvirt VMs with their own kernel and real PID 1 systemd
 - **Key features:** Root inside the guest, no host sudo/`/dev/kvm`/libvirt access for the agent account, deny-by-default guest egress, local package cache, copy-on-write pinned bases, snapshots and clean recreate
+- **Cold start:** Not specified
+- **Max session:** Not specified
+- **Snapshots / Forking:** Yes (snapshot only)
 - **Stateful:** Yes, owner-scoped snapshots; `recreate` resets a VM from its pinned golden image or snapshot
 - **GPU:** Not specified
 - **BYOC / Self-host:** Yes (self-hosted on a Linux KVM/libvirt host)
