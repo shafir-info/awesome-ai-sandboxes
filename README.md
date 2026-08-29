@@ -194,9 +194,9 @@ Self-hosted disposable Linux VMs for coding agents that need real guest root wit
 - **Cold start:** Not specified
 - **Max session:** Not specified
 - **Snapshots / Forking:** Yes (snapshot only)
-- **Stateful:** Yes, owner-scoped snapshots; `recreate` resets a VM from its pinned golden image or snapshot
+- **Stateful:** Yes
 - **GPU:** Not specified
-- **BYOC / Self-host:** Yes (self-hosted on a Linux KVM/libvirt host)
+- **BYOC / Self-host:** Yes
 - **SDKs:** CLI (`rigctl`)
 - **License:** GPL-3.0-or-later
 - **Pricing:** Free (open source)
